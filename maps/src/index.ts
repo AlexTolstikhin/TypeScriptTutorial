@@ -1,4 +1,10 @@
-// import { User } from './User';
-// import { Company } from './Company';
+import { User } from './User';
+import { Company } from './Company';
 import { CustomMap } from './CustomMap';
-new CustomMap('googlemap');
+
+const user = new User();
+const company = new Company();
+const customMap = new CustomMap('googlemap');
+
+customMap.addMarker(user);
+customMap.addMarker(company);
